@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkApp</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+</head>
+
+<body class="grid-container">
+    <!-- Header with navigation and logo -->
+    <header class="grid-x grid-margin-x">
+        <!-- website logo -->
+        <div class="cell large-auto">
+            <a href="#"><img src="../assets/logo.png" alt="site logo"></a>
+        </div>
+        <!-- navigation menu -->
+        <nav class="cell large-auto">
+            <ul>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-x grid-margin-x">
+        <!-- Vertical & horizontal center aligned login box -->
+        <section>
+            <div>
+                <!-- top website logo -->
+                <img src="./assets/logo.png" alt="Logo">
+
+                <!-- form and input fields -->
+                <form action="POST">
+                    <div>
+                        <label for="username">Username or email</label>
+                        <input id="username" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <button type="submit">Login</button>
+                    </div>
+                    <div>
+                        <button>Not a member? sign up.</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- social media login links -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/fbLoginIcon.png" alt="Facebook login">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/googleLoginIcon.png" alt="Google login">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with navigation, social links and logo -->
+    <footer class="grid-x grid-margin-x">
+        <!-- Footer website logo -->
+        <div class="cell large-auto">
+            <img src="../assets/logo.png" alt="site logo">
+        </div>
+        <!-- Footer social media links -->
+        <div class="cell large-auto">
+            <ul>
+                <li><a href="javascript:void(0)">Twitter</a></li>
+                <li><a href="javascript:void(0)">Facebook</a></li>
+                <li><a href="javascript:void(0)">Instagram</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer navigation menu -->
+        <nav class="cell large-auto">
+            <ul>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../scripts/foundations/vendor/jquery.js"></script>
+    <script src="../scripts/foundations/vendor/what-input.js"></script>
+    <script src="../scripts/foundations/vendor/foundation.js"></script>
+    <script src="../scripts/foundations/app.js"></script>
+</body>
+
+</html>

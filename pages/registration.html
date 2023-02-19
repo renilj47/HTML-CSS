@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkApp</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+</head>
+
+<body>
+    <!-- Header with navigation and logo -->
+    <header>
+        <!-- website logo -->
+        <a href="#"><img src="../assets/logo.png" alt="site logo"></a>
+        <!-- navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Vertical & horizontal center aligned login box -->
+        <section>
+            <div>
+                <!-- top website logo -->
+                <img src="./assets/logo.png" alt="Logo">
+
+                <!-- form and input fields -->
+                <form action="POST">
+                    <div>
+                        <label for="username">Enter username or email</label>
+                        <input id="username" type="text" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="password" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="password">Enter Password</label>
+                        <input id="password" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="re-password">Re-enter Password</label>
+                        <input id="re-password" type="password" name="re-password" placeholder="Re-enter Password">
+                    </div>
+                    <div>
+                        <button type="submit">Sign up</button>
+                    </div>
+                    <div>
+                        <button>Already a member? sign in.</button>
+                    </div>
+                </form>
+            </div>
+            <!-- social media login links -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/fbLoginIcon.png" alt="Facebook login">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/googleLoginIcon.png" alt="Google login">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with navigation, social links and logo -->
+    <footer>
+        <!-- Footer website logo -->
+        <img src="../assets/logo.png" alt="site logo">
+
+        <!-- Footer social media links -->
+        <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="javascript:void(0)">Facebook</a></li>
+            <li><a href="javascript:void(0)">Instagram</a></li>
+        </ul>
+
+        <!-- Footer navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../scripts/foundations/vendor/jquery.js"></script>
+    <script src="../scripts/foundations/vendor/what-input.js"></script>
+    <script src="../scripts/foundations/vendor/foundation.js"></script>
+    <script src="../scripts/foundations/app.js"></script>
+</body>
+
+</html>

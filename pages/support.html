@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkApp</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+</head>
+
+<body>
+    <!-- Header with navigation and logo -->
+    <header>
+        <!-- website logo -->
+        <a href="../index.html"><img src="../assets/logo.png" alt="site logo"></a>
+        <!-- navigation menu, if logged in -->
+        <nav>
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+
+        <!-- User profile dropdown menu, if logged in -->
+        <!-- User profile dropdown menu -->
+        <div class="cell large-auto">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a href="#">Profile</a>
+                    <ul class="menu">
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Frequently Asked questions</h1>
+            <div>
+                <!-- Q&A cards wrapper -->
+                <div>
+                    <!-- Individual cards -->
+                    <div>
+                        <h2>What happens when payment fails?</h2>
+                        <hr>
+                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
+                            quam id dui posuere blandit.</p>
+                    </div>
+                    <div>
+                        <h2>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h2>
+                        <hr>
+                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
+                            quam id dui posuere blandit.</p>
+                    </div>
+                    <div>
+                        <h2>What happens when some one take the free parking spot?</h2>
+                        <hr>
+                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
+                            quam id dui posuere blandit.</p>
+                    </div>
+                    <div>
+                        <h2>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi?</h2>
+                        <hr>
+                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
+                            quam id dui posuere blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact us form -->
+        <section>
+            <!-- input fields and submit button wrapper -->
+            <div>
+                <form action="POST">
+                    <!-- input field group -->
+                    <div>
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div>
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="enquires">Enquires</label>
+                        <textarea name="enquires" id="enquires" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer with navigation, social links and logo -->
+    <footer>
+        <!-- Footer website logo -->
+        <img src="../assets/logo.png" alt="site logo">
+
+        <!-- Footer social media links -->
+        <ul>
+            <li><a href="javascript:void(0)">Twitter</a></li>
+            <li><a href="javascript:void(0)">Facebook</a></li>
+            <li><a href="javascript:void(0)">Instagram</a></li>
+        </ul>
+
+        <!-- Footer navigation menu, if logged in -->
+        <nav>
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../scripts/foundations/vendor/jquery.js"></script>
+    <script src="../scripts/foundations/vendor/what-input.js"></script>
+    <script src="../scripts/foundations/vendor/foundation.js"></script>
+    <script src="../scripts/foundations/app.js"></script>
+</body>
+
+</html>

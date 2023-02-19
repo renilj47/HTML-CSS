@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkApp</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+</head>
+
+<body class="grid-container">
+    <!-- Header with navigation and logo -->
+    <header class="grid-x grid-margin-x">
+        <!-- website logo -->
+        <div class="cell large-auto">
+            <a href="../index.html"><img src="../assets/logo.png" alt="site logo"></a>
+        </div>
+        <!-- navigation menu -->
+        <nav class="cell large-auto">
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+        <!-- User profile dropdown menu -->
+        <div class="cell large-auto">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a href="#">Profile</a>
+                    <ul class="menu">
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="grid-x grid-margin-x">
+        <!-- Paid parking spot lists, on initial page load, starts -->
+        <section class="cell medium-6 large-4">
+            <!-- title for parking lists -->
+            <div>
+                <h1>Nearby Paid Parking spots</h1>
+            </div>
+
+            <!-- List of Paid parking spots -->
+            <div>
+                <!-- Parking spot with info and CTA cards -->
+                <div>
+                    <h2>Parking 1</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Pay & Reserve</button>
+                </div>
+                <div>
+                    <h2>Parking 2</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Pay & Reserve</button>
+                </div>
+                <div>
+                    <h2>Parking 3</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Pay & Reserve</button>
+                </div>
+                <div>
+                    <h2>Parking 4</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Pay & Reserve</button>
+                </div>
+            </div>
+        </section>
+        <!-- Paid parking lists, on initial page load, ends -->
+
+        <!-- On select paid parking spot in-detail, If one parking spot is selected from list, starts -->
+        <section>
+            <!-- title for parking lists -->
+            <div>
+                <h1>Parking 1 Details</h1>
+            </div>
+
+            <!-- Selected parking detail/info and CTA -->
+            <div>
+                <div>
+                    <h2>Parking 1</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+
+                    <!-- vehicle, spot and payment details form -->
+                    <form action="POST">
+                        <!-- Vehicle selections -->
+                        <div>
+                            <label for="vehicles">Select your vehicle</label>
+                            <select name="vehicles" id="vehicles">
+                                <option value="v1">Ford</option>
+                                <option value="v2">Subaru</option>
+                                <option value="v3">Toyota</option>
+                            </select>
+                        </div>
+                        <!-- Parking spot selections -->
+                        <div>
+                            <label for="spots">Select your parking spot</label>
+                            <select name="parkingSpot" id="spots">
+                                <option value="p1">G11</option>
+                                <option value="p2">G12</option>
+                                <option value="p3">G13</option>
+                            </select>
+                        </div>
+                        <!-- Payment card details -->
+                        <div>
+                            <div>
+                                <label for="cardno">Card Number</label>
+                                <input type="text" name="cardno" id="cardno">
+                            </div>
+                            <div>
+                                <label for="cardDate">Date of expiry</label>
+                                <input type="text" name="cardDate" id="cardDate">
+                            </div>
+                            <div>
+                                <label for="cvv">CVV</label>
+                                <input type="text" name="cvv" id="cvv">
+                            </div>
+                        </div>
+                        <button type="submit">Pay & Reserve</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- On select paid parking spot in-detail, If one parking spot is selected from list, ends -->
+
+        <!-- On payment success of parking spot, timer section showing remaining time for parking section, starts -->
+        <section>
+            <div>
+                <h1>Time Remaining</h1>
+            </div>
+            <div>
+                <p><span>00</span>hr <span>00</span>min <span>00</span>seconds</p>
+            </div>
+        </section>
+
+        <!-- On payment success of parking spot ends, timer section showing remaining time for parking section, ends -->
+
+        <!-- Map section with parking spot marked -->
+        <section class="cell medium-6 large-4">
+            <!-- map integration here -->
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <!-- Footer with navigation, social links and logo -->
+    <footer>
+        <!-- Footer website logo -->
+        <img src="../assets/logo.png" alt="site logo">
+
+        <!-- Footer social media links -->
+        <div>
+            <ul>
+                <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../scripts/foundations/vendor/jquery.js"></script>
+    <script src="../scripts/foundations/vendor/what-input.js"></script>
+    <script src="../scripts/foundations/vendor/foundation.js"></script>
+    <script src="../scripts/foundations/app.js"></script>
+</body>
+
+</html>

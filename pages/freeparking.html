@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkApp</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+</head>
+
+<body class="grid-container">
+    <!-- Header with navigation and logo -->
+    <header class="grid-x grid-margin-x">
+        <!-- website logo -->
+        <div class="cell large-auto">
+            <a href="../index.html"><img src="../assets/logo.png" alt="site logo"></a>
+        </div>
+        <!-- navigation menu -->
+        <nav class="cell large-auto">
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+        <!-- User profile dropdown menu -->
+        <div class="cell large-auto">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a href="#">Profile</a>
+                    <ul class="menu">
+                        <li><a href="#">Wallet</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- Free parking spot lists, on initial page load, starts -->
+        <section>
+            <!-- title for parking lists -->
+            <div>
+                <h1>Nearby Free Parking spots</h1>
+            </div>
+            <!-- Parking spot with info and CTA cards -->
+            <div>
+                <div>
+                    <h2>Parking 1</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Navigate</button>
+                </div>
+                <div>
+                    <h2>Parking 2</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Navigate</button>
+                </div>
+                <div>
+                    <h2>Parking 3</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Navigate</button>
+                </div>
+                <div>
+                    <h2>Parking 4</h2>
+                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                        Pellentesque in ipsum id orci porta dapibus.</p>
+                    <button type="button">Navigate</button>
+                </div>
+            </div>
+        </section>
+        <!--Free parking spot lists, on initial page load, ends -->
+
+        <!-- On reaching the destination, show timer section showing remaining time for parking section, starts -->
+        <section>
+            <div>
+                <h1>Time Remaining</h1>
+            </div>
+            <div>
+                <p><span>00</span>hr <span>00</span>min <span>00</span>seconds</p>
+            </div>
+        </section>
+        <!-- On reaching the destination, show timer section showing remaining time for parking section, ends -->
+
+        <!-- map section with parking spot marked -->
+        <section>
+
+            <!-- map integration here -->
+            <div id="map"></div>
+        </section>
+    </main>
+    <!-- Footer with navigation, social links and logo -->
+    <footer>
+        <!-- Footer website logo -->
+        <img src="../assets/logo.png" alt="site logo">
+
+        <!-- Footer social media links -->
+        <ul>
+            <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+            <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+            <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+        </ul>
+
+        <!-- Footer navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="./freeparking.html">Free Parking</a></li>
+                <li><a href="./paidparking.html">Paid Parking</a></li>
+                <li><a href="./support.html">Support</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../scripts/foundations/vendor/jquery.js"></script>
+    <script src="../scripts/foundations/vendor/what-input.js"></script>
+    <script src="../scripts/foundations/vendor/foundation.js"></script>
+    <script src="../scripts/foundations/app.js"></script>
+</body>
+
+</html>
