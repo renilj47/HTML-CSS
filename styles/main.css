@@ -1,4 +1,114 @@
-ul li{
-    list-style: none;
-    display: inline-block;
+body h1,
+h2,
+h3,
+h4,
+h5 p,
+a,
+* {
+    font-family: "Quicksand", sans-serif !important;
+}
+
+.promo-banner {
+    height: 500px;
+    background: url("../assets/Parking1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.promo-banner button {
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+    font-size: large;
+}
+
+.header .top-bar,
+.top-bar ul,
+.header a,
+.header a:hover {
+    background-color: #1779ba !important;
+    color: white;
+}
+
+.header-logo a {
+    padding: 0 !important;
+}
+
+.header-logo img {
+    width: 50px;
+}
+
+.footer-logo {
+    width: 60px;
+}
+
+.features-sec {
+    text-align: center;
+}
+
+.break-sec {
+    background-color: #1779ba;
+    color: white;
+}
+
+.paid-park {
+    height: 450px;
+    background-image: url("../assets/Parking3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.free-park {
+    height: 450px;
+    background-image: url("../assets/Parking2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.app-link-sec {
+    position: relative;
+    height: 250px;
+    background-image: url("../assets/promo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.app-link {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+}
+
+.google-logo a {
+    padding: 0 !important;
+}
+
+.apple-logo a {
+    padding: 0.5rem 1rem;
+}
+
+.profile-drop :hover {
+    color: white;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #1779ba;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer ul {
+    display: inline-flex;
 }

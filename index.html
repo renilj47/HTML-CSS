@@ -9,113 +9,118 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/foundations/foundation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 
-<body class="grid-container">
+<body class="grid-container full">
     <!-- Header with navigation and logo -->
-    <header class="grid-x grid-margin-x">
-        <!-- website logo -->
-        <div class="cell large-auto">
-            <a href="../index.html"><img src="../assets/logo.png" alt="site logo"></a>
-        </div>
-        <!-- navigation menu -->
-        <nav class="cell large-auto">
-            <ul>
-                <li><a href="./freeparking.html">Free Parking</a></li>
-                <li><a href="./paidparking.html">Paid Parking</a></li>
-                <li><a href="./support.html">Support</a></li>
-            </ul>
-        </nav>
-        <!-- User profile dropdown menu -->
-        <div class="cell large-auto">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li>
-                    <a href="#">Profile</a>
-                    <ul class="menu">
-                        <li><a href="#">Wallet</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text header-logo">
+                        <a href="../index.html">
+                            <img src="./assets/logo.png" alt="site logo">
+                        </a>
+                    </li>
+                    <li class="menu-text"><a href="./freeparking.html">Free Parking</a></li>
+                    <li class="menu-text"><a href="./paidparking.html">Paid Parking</a></li>
+                    <li class="menu-text"><a href="./support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">
+                        <a class="profile-drop" href="#">Profile</a>
+                        <ul class="menu">
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <!-- Homepage contents -->
-    <main class="grid-x grid-margin-x">
+    <main class="main-content">
         <!-- Homepage banner section -->
-        <section>
-            <div>
-                <img src="./assets/" alt="banner image/promo">
-                <button type="button">CTA</button>
+        <section class="grid-x grid-margin-x">
+            <div class="cell promo-banner">
+                <!-- <img src="./assets/Parking1.jpg" alt="banner image/promo"> -->
+                <button type="button" class="button primary">Check now</button>
             </div>
         </section>
 
         <!-- Find parking  -->
-        <section>
+        <section class="grid-x grid-margin-x features-sec">
             <!-- section heading -->
-            <div>
+            <div class="cell break-sec">
                 <h1>Find your parking</h1>
             </div>
 
             <!-- Free parking  -->
-            <div>
-                <h2>Free parking</h2>
-                <img src="./assets/freeparking.png" alt="freeparking image">
-                <a href="./pages/freeparking.html">Free Parking</a>
+            <div class="cell small-12 large-6">
+                <a href="./pages/freeparking.html">
+                    <h2>Free parking</h2>
+                    <div class="free-park"></div>
+                    <a class="button" href="./pages/freeparking.html">Free Parking</a>
+                </a>
             </div>
 
             <!-- Paid parking -->
-            <div>
-                <h2>Paid parking</h2>
-                <img src="./assets/freeparking.png" alt="freeparking image">
-                <a href="./pages/paidparking.html">Paid Parking</a>
+            <div class="cell small-12 large-6">
+                <a href="./pages/paidparking.html">
+                    <h2>Paid parking</h2>
+                    <div class="paid-park"></div>
+                    <a class="button" href="./pages/paidparking.html">Paid Parking</a>
+                </a>
             </div>
         </section>
 
         <!-- Mobile application promo section -->
-        <section>
-            <div>
-                <!-- Promotion to app stores left side banner -->
-                <div>
-                    <img src="./assets/mobileAppPromo.png" alt="mobile application promo">
-                </div>
-
-                <!-- App store links right side -->
-                <div>
-                    <!-- Google play store img with descriptions and link -->
-                    <div>
-                        <a href="#">
-                            <img src="./assets/playstore.png" alt="Google play store image">
+        <section class="grid-x grid-margin-x">
+            <!-- Promotion to app stores left side banner -->
+            <div class="cell app-link-sec">
+                <!-- Google play store img with descriptions and link -->
+                <ul class="menu app-link">
+                    <li class="google-logo">
+                        <a href="javascript:void(0)" target="_blank">
+                            <img style="width: 186px;" src="./assets/google-play-badge.png"
+                                alt="Google play store image">
                         </a>
-                    </div>
-
-                    <!-- Apple store img with link -->
-                    <div>
+                    </li>
+                    <li class="apple-logo">
                         <a href="#">
-                            <img src="./assets/applestore.png" alt="Apple app store image">
+                            <img style="width: 150px" src="./assets/App_store.svg" alt="Google play store image">
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-
         </section>
     </main>
 
     <!-- Footer with navigation, social links and logo -->
-    <footer class="grid-x grid-margin-x">
+    <footer class="footer grid-x grid-margin-x">
         <!-- Footer website logo -->
-        <img src="../assets/logo.png" alt="site logo">
-
+        <div class="cell small-4 large-4 medium-4">
+            <a href="../index.html">
+                <img class="footer-logo" src="./assets/logo.png" alt="site logo">
+            </a>
+        </div>
         <!-- Footer social media links -->
-        <ul>
-            <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
-            <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
-            <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
-        </ul>
-
+        <div class="social-links cell small-4 large-4 medium-4">
+            <h5><b>Follow us on</b></h5>
+            <ul class="menu">
+                <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
         <!-- Footer navigation menu -->
-        <nav>
-            <ul>
+        <nav class="cell small-4 large-4 medium-4">
+            <h5><b>Quick Links</b></h5>
+            <ul class="menu vertical">
                 <li><a href="./pages/freeparking.html">Free Parking</a></li>
                 <li><a href="./pages/paidparking.html">Paid Parking</a></li>
                 <li><a href="./pages/support.html">Support</a></li>
