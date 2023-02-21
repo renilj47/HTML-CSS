@@ -16,6 +16,9 @@ a {
   background-color: #1779ba !important;
   color: white;
 }
+.dropdown.menu>li.is-active>a { /* overriding foundation style */
+    color: white !important;
+}
 .header-logo a {
   padding: 0 !important;
 }
