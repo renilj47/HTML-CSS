@@ -67,6 +67,13 @@ a{
     background-repeat: no-repeat;
     background-position: center;
 }
+#map {
+    height: 1100px;
+    background-image: url("../assets/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .app-link-sec {
     position: relative;

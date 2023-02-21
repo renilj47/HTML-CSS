@@ -9,9 +9,10 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 
-<body>
+<body class="grid-container">
     <!-- Header with navigation and logo -->
     <header class="header">
         <div class="top-bar">
@@ -40,43 +41,48 @@
             </div>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="grid-x grid-margin-x">
+        <section class="cell large-6">
             <h1>Frequently Asked questions</h1>
             <div>
                 <!-- Q&A cards wrapper -->
-                <div>
+                <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
                     <!-- Individual cards -->
-                    <div>
-                        <h2>What happens when payment fails?</h2>
-                        <hr>
-                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
-                            quam id dui posuere blandit.</p>
-                    </div>
-                    <div>
-                        <h2>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h2>
-                        <hr>
-                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
-                            quam id dui posuere blandit.</p>
-                    </div>
-                    <div>
-                        <h2>What happens when some one take the free parking spot?</h2>
-                        <hr>
-                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
-                            quam id dui posuere blandit.</p>
-                    </div>
-                    <div>
-                        <h2>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi?</h2>
-                        <hr>
-                        <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur aliquet
-                            quam id dui posuere blandit.</p>
-                    </div>
-                </div>
+                    <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <h3>What happens when payment fails?</h3>
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
+                                aliquet
+                                quam id dui posuere blandit.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">
+                            <h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3>
+                        </a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
+                                aliquet
+                                quam id dui posuere blandit.</p>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title"><h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3></a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
+                                aliquet
+                                quam id dui posuere blandit.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Contact us form -->
-        <section>
+        <section class="cell large-6">
+            <h1>Contact Us</h1>
             <!-- input fields and submit button wrapper -->
             <div>
                 <form action="POST">
@@ -97,7 +103,7 @@
                         <label for="enquires">Enquires</label>
                         <textarea name="enquires" id="enquires" cols="30" rows="10"></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button class="button primary expanded" type="submit">Send</button>
                 </form>
             </div>
         </section>

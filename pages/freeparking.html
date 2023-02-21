@@ -9,9 +9,10 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 
-<body class="grid-container full">
+<body class="grid-container">
     <!-- Header with navigation and logo -->
     <header class="header">
         <div class="top-bar">
@@ -40,57 +41,72 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="grid-x grid-margin-x">
+        <!-- title for parking lists -->
+        <div class="cell">
+            <h1>Nearby Free Parking spots</h1>
+        </div>
         <!-- Free parking spot lists, on initial page load, starts -->
-        <section>
-            <!-- title for parking lists -->
-            <div>
-                <h1>Nearby Free Parking spots</h1>
-            </div>
+        <section class="cell large-6">
             <!-- Parking spot with info and CTA cards -->
             <div>
-                <div>
-                    <h2>Parking 1</h2>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                        Pellentesque in ipsum id orci porta dapibus.</p>
-                    <button type="button">Navigate</button>
+                <div class="card">
+                    <div class="card-divider">
+                        <h2>Parking 1</h2>
+                    </div>
+                    <div class="card-section">
+                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                            Pellentesque in ipsum id orci porta dapibus.</p>
+                        <button class="button primary" type="button">Navigate</button>
+                    </div>
                 </div>
-                <div>
-                    <h2>Parking 2</h2>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                        Pellentesque in ipsum id orci porta dapibus.</p>
-                    <button type="button">Navigate</button>
+                <div class="card">
+                    <div class="card-divider">
+                        <h2>Parking 1</h2>
+                    </div>
+                    <div class="card-section">
+                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                            Pellentesque in ipsum id orci porta dapibus.</p>
+                        <button class="button primary" type="button">Navigate</button>
+                    </div>
                 </div>
-                <div>
-                    <h2>Parking 3</h2>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                        Pellentesque in ipsum id orci porta dapibus.</p>
-                    <button type="button">Navigate</button>
+                <div class="card">
+                    <div class="card-divider">
+                        <h2>Parking 1</h2>
+                    </div>
+                    <div class="card-section">
+                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                            Pellentesque in ipsum id orci porta dapibus.</p>
+                        <button class="button primary" type="button">Navigate</button>
+                    </div>
                 </div>
-                <div>
-                    <h2>Parking 4</h2>
-                    <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                        Pellentesque in ipsum id orci porta dapibus.</p>
-                    <button type="button">Navigate</button>
+                <div class="card">
+                    <div class="card-divider">
+                        <h2>Parking 1</h2>
+                    </div>
+                    <div class="card-section">
+                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
+                            Pellentesque in ipsum id orci porta dapibus.</p>
+                        <button class="button primary" type="button">Navigate</button>
+                    </div>
                 </div>
             </div>
         </section>
         <!--Free parking spot lists, on initial page load, ends -->
 
         <!-- On reaching the destination, show timer section showing remaining time for parking section, starts -->
-        <section>
+        <!-- <section>
             <div>
                 <h1>Time Remaining</h1>
             </div>
             <div>
                 <p><span>00</span>hr <span>00</span>min <span>00</span>seconds</p>
             </div>
-        </section>
+        </section> -->
         <!-- On reaching the destination, show timer section showing remaining time for parking section, ends -->
 
         <!-- map section with parking spot marked -->
-        <section>
-
+        <section class="cell large-6">
             <!-- map integration here -->
             <div id="map"></div>
         </section>
