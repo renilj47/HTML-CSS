@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 
-<body class="grid-container">
+<body>
     <!-- Header with navigation and logo -->
-    <header class="header">
+    <header class="header grid-container full">
         <div class="top-bar">
             <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>
@@ -34,102 +34,110 @@
                         <a class="profile-drop" href="#">Profile</a>
                         <ul class="menu">
                             <li><a href="#">Wallet</a></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="./login.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <main class="grid-x grid-margin-x">
-        <!-- title for parking lists -->
-        <div class="cell">
-            <h1>Nearby Paid Parking spots</h1>
-        </div>
-        <!-- Paid parking spot lists, on initial page load, starts -->
-        <section class="cell large-6">
-            <!-- List of Paid parking spots -->
-            <div>
-                <!-- Parking spot with info and CTA cards -->
-                <div class="card">
-                    <div class="card-divider">
-                        <h2>Parking 1</h2>
-                    </div>
-                    <div class="card-section">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                            Pellentesque in ipsum id orci porta dapibus.</p>
-                        <button class="button primary" type="button">Pay & Reserve</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-divider">
-                        <h2>Parking 1</h2>
-                    </div>
-                    <div class="card-section">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                            Pellentesque in ipsum id orci porta dapibus.</p>
-                        <button class="button primary" type="button">Pay & Reserve</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-divider">
-                        <h2>Parking 1</h2>
-                    </div>
-                    <div class="card-section">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                            Pellentesque in ipsum id orci porta dapibus.</p>
-                        <button class="button primary" type="button">Pay & Reserve</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-divider">
-                        <h2>Parking 1</h2>
-                    </div>
-                    <div class="card-section">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.
-                            Pellentesque in ipsum id orci porta dapibus.</p>
-                        <button class="button primary" type="button">Pay & Reserve</button>
-                    </div>
-                </div>
+    <main class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <!-- title for parking lists -->
+            <div class="cell">
+                <h1>Nearby Paid Parking spots</h1>
             </div>
-        </section>
-        <!-- Paid parking lists, on initial page load, ends -->
+            <!-- Paid parking spot lists, on initial page load, starts -->
+            <section class="cell large-6">
+                <!-- List of Paid parking spots -->
+                <div>
+                    <!-- Parking spot with info and CTA cards -->
+                    <div class="card">
+                        <div class="card-divider">
+                            <h2>Parking 1</h2>
+                        </div>
+                        <div class="card-section">
+                            <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                                feugiat.
+                                Pellentesque in ipsum id orci porta dapibus.</p>
+                            <a href="./paidparkingdetailed.html" class="button primary" type="button">Pay & Reserve</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-divider">
+                            <h2>Parking 1</h2>
+                        </div>
+                        <div class="card-section">
+                            <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                                feugiat.
+                                Pellentesque in ipsum id orci porta dapibus.</p>
+                            <a href="./paidparkingdetailed.html" class="button primary" type="button">Pay & Reserve</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-divider">
+                            <h2>Parking 1</h2>
+                        </div>
+                        <div class="card-section">
+                            <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                                feugiat.
+                                Pellentesque in ipsum id orci porta dapibus.</p>
+                            <a href="./paidparkingdetailed.html" class="button primary" type="button">Pay & Reserve</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-divider">
+                            <h2>Parking 1</h2>
+                        </div>
+                        <div class="card-section">
+                            <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                                feugiat.
+                                Pellentesque in ipsum id orci porta dapibus.</p>
+                            <a href="./paidparkingdetailed.html" class="button primary" type="button">Pay & Reserve</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Paid parking lists, on initial page load, ends -->
 
-        <!-- Map section with parking spot marked -->
-        <section class="cell large-6">
-            <!-- map integration here -->
-            <div id="map">
-                <!-- <img src="../assets/map.png" alt="map image"> -->
-            </div>
-        </section>
+            <!-- Map section with parking spot marked -->
+            <section class="cell large-6">
+                <!-- map integration here -->
+                <div id="map">
+                    <!-- <img src="../assets/map.png" alt="map image"> -->
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer with navigation, social links and logo -->
-    <footer class="footer grid-x grid-margin-x">
-        <!-- Footer website logo -->
-        <div class="cell small-4 large-4 medium-4">
-            <a href="../index.html">
-                <img class="footer-logo" src="../assets/logo.png" alt="site logo">
-            </a>
+    <footer class="footer grid-container full">
+        <div class="grid-x">
+            <!-- Footer website logo -->
+            <div class="cell small-4 large-4 medium-4">
+                <a href="../index.html">
+                    <img class="footer-logo" src="../assets/logo.png" alt="site logo">
+                </a>
+            </div>
+            <!-- Footer social media links -->
+            <div class="social-links cell small-4 large-4 medium-4">
+                <h5><b>Follow us on</b></h5>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+                    <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+                    <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <!-- Footer navigation menu -->
+            <nav class="cell small-4 large-4 medium-4">
+                <h5><b>Quick Links</b></h5>
+                <ul class="menu vertical">
+                    <li><a href="./pages/freeparking.html">Free Parking</a></li>
+                    <li><a href="./pages/paidparking.html">Paid Parking</a></li>
+                    <li><a href="./pages/support.html">Support</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Footer social media links -->
-        <div class="social-links cell small-4 large-4 medium-4">
-            <h5><b>Follow us on</b></h5>
-            <ul class="menu">
-                <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
-                <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
-                <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
-        <!-- Footer navigation menu -->
-        <nav class="cell small-4 large-4 medium-4">
-            <h5><b>Quick Links</b></h5>
-            <ul class="menu vertical">
-                <li><a href="./pages/freeparking.html">Free Parking</a></li>
-                <li><a href="./pages/paidparking.html">Paid Parking</a></li>
-                <li><a href="./pages/support.html">Support</a></li>
-            </ul>
-        </nav>
     </footer>
     <script src="../scripts/foundations/vendor/jquery.js"></script>
     <script src="../scripts/foundations/vendor/what-input.js"></script>

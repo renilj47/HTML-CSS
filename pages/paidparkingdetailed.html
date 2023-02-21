@@ -25,7 +25,7 @@
                     </li>
                     <li class="menu-text"><a href="./freeparking.html">Free Parking</a></li>
                     <li class="menu-text"><a href="./paidparking.html">Paid Parking</a></li>
-                    <li class="menu-text"><a href="#">Support</a></li>
+                    <li class="menu-text"><a href="./support.html">Support</a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
@@ -43,75 +43,78 @@
     </header>
     <main class="grid-container">
         <div class="grid-x grid-margin-x">
+            <!-- title for parking lists -->
+            <div class="cell">
+                <h1>Nearby Paid Parking spots</h1>
+            </div>
+            <!-- On select paid parking spot in-detail, If one parking spot is selected from list, starts -->
             <section class="cell large-6">
-                <h1>Frequently Asked questions</h1>
+                <!-- title for parking lists -->
                 <div>
-                    <!-- Q&A cards wrapper -->
-                    <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                        <!-- Individual cards -->
-                        <li class="accordion-item is-active" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>What happens when payment fails?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
+                    <h1>Parking 1 Details</h1>
+                </div>
+
+                <!-- Selected parking detail/info and CTA -->
+                <div>
+                    <div class="card">
+                        <div class="card-divider">
+                            <h2>Parking 1</h2>
+                        </div>
+                        <!-- vehicle, spot and payment details form -->
+                        <form class="card-section">
+                            <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                                feugiat.
+                                Pellentesque in ipsum id orci porta dapibus.</p>
+                            <!-- Vehicle selections -->
+                            <div>
+                                <label for="vehicles">Select your vehicle</label>
+                                <select name="vehicles" id="vehicles">
+                                    <option value="v1">Ford</option>
+                                    <option value="v2">Subaru</option>
+                                    <option value="v3">Toyota</option>
+                                </select>
                             </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
+                            <!-- Parking spot selections -->
+                            <div>
+                                <label for="spots">Select your parking spot</label>
+                                <select name="parkingSpot" id="spots">
+                                    <option value="p1">G11</option>
+                                    <option value="p2">G12</option>
+                                    <option value="p3">G13</option>
+                                </select>
                             </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
+                            <!-- Payment card details -->
+                            <div>
+                                <div>
+                                    <label for="cardno">Card Number</label>
+                                    <input type="text" name="cardno" id="cardno">
+                                </div>
+                                <div>
+                                    <label for="cardDate">Date of expiry</label>
+                                    <input type="text" name="cardDate" id="cardDate">
+                                </div>
+                                <div>
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" name="cvv" id="cvv">
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                            <a href="./parkinreached.html" class="button primary">Pay & Reserve</a>
+                        </form>
+                    </div>
                 </div>
             </section>
+            <!-- On select paid parking spot in-detail, If one parking spot is selected from list, ends -->
 
-            <!-- Contact us form -->
+            <!-- Map section with parking spot marked -->
             <section class="cell large-6">
-                <h1>Contact Us</h1>
-                <!-- input fields and submit button wrapper -->
-                <div>
-                    <form action="POST">
-                        <!-- input field group -->
-                        <div>
-                            <label for="fname">First name</label>
-                            <input type="text" id="fname" name="fname">
-                        </div>
-                        <div>
-                            <label for="lname">Last name</label>
-                            <input type="text" id="lname" name="lname">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="enquires">Enquires</label>
-                            <textarea name="enquires" id="enquires" cols="30" rows="10"></textarea>
-                        </div>
-                        <button class="button primary expanded" type="submit">Send</button>
-                    </form>
+                <!-- map integration here -->
+                <div id="map">
+                    <!-- <img src="../assets/map.png" alt="map image"> -->
                 </div>
             </section>
         </div>
     </main>
+
     <!-- Footer with navigation, social links and logo -->
     <footer class="footer grid-container full">
         <div class="grid-x">
@@ -136,7 +139,7 @@
                 <ul class="menu vertical">
                     <li><a href="./pages/freeparking.html">Free Parking</a></li>
                     <li><a href="./pages/paidparking.html">Paid Parking</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="./pages/support.html">Support</a></li>
                 </ul>
             </nav>
         </div>

@@ -25,7 +25,7 @@
                     </li>
                     <li class="menu-text"><a href="./freeparking.html">Free Parking</a></li>
                     <li class="menu-text"><a href="./paidparking.html">Paid Parking</a></li>
-                    <li class="menu-text"><a href="#">Support</a></li>
+                    <li class="menu-text"><a href="./support.html">Support</a></li>
                 </ul>
             </div>
             <div class="top-bar-right">
@@ -43,75 +43,32 @@
     </header>
     <main class="grid-container">
         <div class="grid-x grid-margin-x">
+            <!-- title for parking lists -->
+            <div class="cell align-center-middle">
+                <h1>Nearby Paid Parking spots</h1>
+            </div>
+            <!-- On payment success of parking spot, timer section showing remaining time for parking section, starts -->
             <section class="cell large-6">
-                <h1>Frequently Asked questions</h1>
                 <div>
-                    <!-- Q&A cards wrapper -->
-                    <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
-                        <!-- Individual cards -->
-                        <li class="accordion-item is-active" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>What happens when payment fails?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
-                            </div>
-                        </li>
-                        <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title">
-                                <h3>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.?</h3>
-                            </a>
-                            <div class="accordion-content" data-tab-content>
-                                <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Curabitur
-                                    aliquet
-                                    quam id dui posuere blandit.</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <h1>Time Remaining</h1>
+                </div>
+                <div>
+                    <h2><span>00</span>hr <span>00</span>min <span>00</span>seconds</h2>
                 </div>
             </section>
 
-            <!-- Contact us form -->
+            <!-- On payment success of parking spot ends, timer section showing remaining time for parking section, ends -->
+
+            <!-- Map section with parking spot marked -->
             <section class="cell large-6">
-                <h1>Contact Us</h1>
-                <!-- input fields and submit button wrapper -->
-                <div>
-                    <form action="POST">
-                        <!-- input field group -->
-                        <div>
-                            <label for="fname">First name</label>
-                            <input type="text" id="fname" name="fname">
-                        </div>
-                        <div>
-                            <label for="lname">Last name</label>
-                            <input type="text" id="lname" name="lname">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="enquires">Enquires</label>
-                            <textarea name="enquires" id="enquires" cols="30" rows="10"></textarea>
-                        </div>
-                        <button class="button primary expanded" type="submit">Send</button>
-                    </form>
+                <!-- map integration here -->
+                <div id="map">
+                    <!-- <img src="../assets/map.png" alt="map image"> -->
                 </div>
             </section>
         </div>
     </main>
+
     <!-- Footer with navigation, social links and logo -->
     <footer class="footer grid-container full">
         <div class="grid-x">
@@ -136,7 +93,7 @@
                 <ul class="menu vertical">
                     <li><a href="./pages/freeparking.html">Free Parking</a></li>
                     <li><a href="./pages/paidparking.html">Paid Parking</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="./pages/support.html">Support</a></li>
                 </ul>
             </nav>
         </div>

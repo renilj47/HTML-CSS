@@ -1,119 +1,121 @@
+/* common styles */
 body h1,
 h2,
 h3,
 h4,
 h5 p,
-a{
-    font-family: "Quicksand", sans-serif !important;
+a {
+  font-family: "Quicksand", sans-serif !important;
 }
 
-.promo-banner {
-    height: 500px;
-    background: url("../assets/Parking1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.promo-banner button {
-    position: absolute;
-    right: 10%;
-    bottom: 50%;
-    font-size: large;
-}
-
+/* header styling starts */
 .header .top-bar,
 .top-bar ul,
 .header a,
 .header a:hover {
-    background-color: #1779ba !important;
-    color: white;
+  background-color: #1779ba !important;
+  color: white;
 }
-
 .header-logo a {
-    padding: 0 !important;
+  padding: 0 !important;
 }
-
 .header-logo img {
-    width: 50px;
+  width: 50px;
+}
+.profile-drop :hover {
+  color: white;
 }
 
-.footer-logo {
-    width: 60px;
-}
+/* header styling ends */
 
 .features-sec {
-    text-align: center;
+  text-align: center;
+}
+.break-sec {
+  /** breaking space with background color **/
+  background-color: #1779ba;
+  color: white;
 }
 
-.break-sec {
-    background-color: #1779ba;
-    color: white;
+/* index page styles starts */
+
+/* banner styles starts */
+.promo-banner {
+  height: 500px;
+  background: url("../assets/Parking1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 }
+.promo-banner button {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+  font-size: large;
+}
+/* banner styles starts */
 
 .paid-park {
-    height: 450px;
-    background-image: url("../assets/Parking3.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 450px;
+  background-image: url("../assets/Parking3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 .free-park {
-    height: 450px;
-    background-image: url("../assets/Parking2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  height: 450px;
+  background-image: url("../assets/Parking2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-#map {
-    height: 1100px;
-    background-image: url("../assets/map.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .app-link-sec {
-    position: relative;
-    height: 250px;
-    background-image: url("../assets/promo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+  position: relative;
+  height: 250px;
+  background-image: url("../assets/promo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 .app-link {
-    position: absolute !important;
-    top: 50%;
-    left: 50%;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
 }
-
 .google-logo a {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .apple-logo a {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
+/* index page styles ends */
 
-.profile-drop :hover {
-    color: white;
+/* paid & free parking pages styling starts */
+#map {
+  height: 100vh;
+  background-image: url("../assets/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+/* paid & free parking pages styling ends */
 
+/* footer styling starts */
+.footer-logo {
+  width: 60px;
+}
 .footer {
-    padding: 30px;
-    background-color: #1779ba;
-    color: white;
-    text-align: center;
+  padding: 30px;
+  background-color: #1779ba;
+  color: white;
+  text-align: center;
 }
-
 .footer a {
-    color: white;
+  color: white;
 }
-
 .footer ul {
-    display: inline-flex;
+  display: inline-flex;
 }
+/* footer styling ends */

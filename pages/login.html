@@ -9,109 +9,93 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/foundations/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 
-<body class="grid-container">
+<body>
     <!-- Header with navigation and logo -->
-    <header class="header">
+    <header class="header grid-container full">
         <div class="top-bar">
             <div class="top-bar-left">
                 <ul class="dropdown menu" data-dropdown-menu>
                     <li class="menu-text header-logo">
-                        <a href="../index.html">
+                        <a href="#">
                             <img src="../assets/logo.png" alt="site logo">
                         </a>
                     </li>
-                    <li class="menu-text"><a href="./freeparking.html">Free Parking</a></li>
-                    <li class="menu-text"><a href="./paidparking.html">Paid Parking</a></li>
-                    <li class="menu-text"><a href="./support.html">Support</a></li>
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li class="menu-text">
-                        <a class="profile-drop" href="#">Profile</a>
-                        <ul class="menu">
-                            <li><a href="#">Wallet</a></li>
-                            <li><a href="#">Logout</a></li>
-                        </ul>
-                    </li>
+                    <li class="menu-text"><a href="./supportloggedout.html">Support</a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <main class="grid-x grid-margin-x">
+    <main class="grid-container">
         <!-- Vertical & horizontal center aligned login box -->
-        <section>
-            <div>
-                <!-- top website logo -->
-                <img src="./assets/logo.png" alt="Logo">
-
-                <!-- form and input fields -->
-                <form action="POST">
-                    <div>
-                        <label for="username">Username or email</label>
-                        <input id="username" type="text" name="username" placeholder="Username">
-                    </div>
-                    <div>
-                        <label for="password">Password</label>
-                        <input id="password" type="password" name="password" placeholder="Password">
-                    </div>
-                    <div>
-                        <button type="submit">Login</button>
-                    </div>
-                    <div>
-                        <button>Not a member? sign up.</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- social media login links -->
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./assets/fbLoginIcon.png" alt="Facebook login">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./assets/googleLoginIcon.png" alt="Google login">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <div class="grid-x grid-padding-x align-center-middle" style="height: 100vh">
+            <section class="cell large-4">
+                <div>
+                    <!-- top website logo -->
+                    <img src="../assets/logo.png" style="width: 50px" alt="site logo">
+    
+                    <!-- form and input fields -->
+                    <form>
+                        <div>
+                            <label for="username">Username or email</label>
+                            <input id="username" type="text" name="username" placeholder="Username">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <a href="../index.html" class="button primary expanded" type="button">Login</a>
+                        </div>
+                        <div>
+                            <a href="../pages/registration.html" class="button warning">Not a member? sign up.</a>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- social media login links -->
+                <div class="social-links cell small-4 large-4 medium-4">
+                    <p><b>Social media Sign in</b></p>
+                    <ul class="menu">
+                        <li><a href="javascript:void(0)" target="_blank">Apple</a></li>
+                        <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0)" target="_blank">Google</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer with navigation, social links and logo -->
-    <footer class="footer grid-x grid-margin-x">
-        <!-- Footer website logo -->
-        <div class="cell small-4 large-4 medium-4">
-            <a href="../index.html">
-                <img class="footer-logo" src="../assets/logo.png" alt="site logo">
-            </a>
+    <footer class="footer grid-container full">
+        <div class="grid-x">
+            <!-- Footer website logo -->
+            <div class="cell small-4 large-4 medium-4">
+                <a href="../index.html">
+                    <img class="footer-logo" src="../assets/logo.png" alt="site logo">
+                </a>
+            </div>
+            <!-- Footer social media links -->
+            <div class="social-links cell small-4 large-4 medium-4">
+                <h5><b>Follow us on</b></h5>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+                    <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+                    <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <!-- Footer navigation menu -->
+            <nav class="cell small-4 large-4 medium-4">
+                <h5><b>Quick Links</b></h5>
+                <ul class="menu vertical">
+                    <li><a href="./supportloggedout.html">Support</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Footer social media links -->
-        <div class="social-links cell small-4 large-4 medium-4">
-            <h5><b>Follow us on</b></h5>
-            <ul class="menu">
-                <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
-                <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
-                <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
-            </ul>
-        </div>
-        <!-- Footer navigation menu -->
-        <nav class="cell small-4 large-4 medium-4">
-            <h5><b>Quick Links</b></h5>
-            <ul class="menu vertical">
-                <li><a href="./pages/freeparking.html">Free Parking</a></li>
-                <li><a href="./pages/paidparking.html">Paid Parking</a></li>
-                <li><a href="./pages/support.html">Support</a></li>
-            </ul>
-        </nav>
     </footer>
     <script src="../scripts/foundations/vendor/jquery.js"></script>
     <script src="../scripts/foundations/vendor/what-input.js"></script>
