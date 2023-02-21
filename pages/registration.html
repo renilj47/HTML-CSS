@@ -13,15 +13,32 @@
 
 <body>
     <!-- Header with navigation and logo -->
-    <header>
-        <!-- website logo -->
-        <a href="#"><img src="../assets/logo.png" alt="site logo"></a>
-        <!-- navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="./support.html">Support</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text header-logo">
+                        <a href="../index.html">
+                            <img src="../assets/logo.png" alt="site logo">
+                        </a>
+                    </li>
+                    <li class="menu-text"><a href="./freeparking.html">Free Parking</a></li>
+                    <li class="menu-text"><a href="./paidparking.html">Paid Parking</a></li>
+                    <li class="menu-text"><a href="./support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li class="menu-text">
+                        <a class="profile-drop" href="#">Profile</a>
+                        <ul class="menu">
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -76,21 +93,29 @@
     </main>
 
     <!-- Footer with navigation, social links and logo -->
-    <footer>
+    <footer class="footer grid-x grid-margin-x">
         <!-- Footer website logo -->
-        <img src="../assets/logo.png" alt="site logo">
-
+        <div class="cell small-4 large-4 medium-4">
+            <a href="../index.html">
+                <img class="footer-logo" src="../assets/logo.png" alt="site logo">
+            </a>
+        </div>
         <!-- Footer social media links -->
-        <ul>
-            <li><a href="javascript:void(0)">Twitter</a></li>
-            <li><a href="javascript:void(0)">Facebook</a></li>
-            <li><a href="javascript:void(0)">Instagram</a></li>
-        </ul>
-
+        <div class="social-links cell small-4 large-4 medium-4">
+            <h5><b>Follow us on</b></h5>
+            <ul class="menu">
+                <li><a href="javascript:void(0)" target="_blank">Twitter</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Facebook</a></li>
+                <li><a href="javascript:void(0)" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
         <!-- Footer navigation menu -->
-        <nav>
-            <ul>
-                <li><a href="./support.html">Support</a></li>
+        <nav class="cell small-4 large-4 medium-4">
+            <h5><b>Quick Links</b></h5>
+            <ul class="menu vertical">
+                <li><a href="./pages/freeparking.html">Free Parking</a></li>
+                <li><a href="./pages/paidparking.html">Paid Parking</a></li>
+                <li><a href="./pages/support.html">Support</a></li>
             </ul>
         </nav>
     </footer>

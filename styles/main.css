@@ -3,8 +3,7 @@ h2,
 h3,
 h4,
 h5 p,
-a,
-* {
+a{
     font-family: "Quicksand", sans-serif !important;
 }
 
@@ -98,7 +97,6 @@ a,
 }
 
 .footer {
-    margin-top: 30px;
     padding: 30px;
     background-color: #1779ba;
     color: white;
