@@ -42,29 +42,38 @@
         </nav>
     </header>
     <main class="grid-container">
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-margin-x grid-margin-y">
             <!-- title for parking lists -->
             <div class="cell align-center-middle">
-                <h1>Nearby Paid Parking spots</h1>
+
             </div>
             <!-- On payment success of parking spot, timer section showing remaining time for parking section, starts -->
             <section class="cell large-6">
-                <div>
-                    <h1>Time Remaining</h1>
+                <div class="card">
+                    <div class="card-divider">
+                        <h1>Your Parking spot</h1>
+                    </div>
+                    <div class="card-section">
+                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada
+                            feugiat.
+                            Pellentesque in ipsum id orci porta dapibus.</p>
+                    </div>
                 </div>
-                <div>
-                    <h2><span>00</span>hr <span>00</span>min <span>00</span>seconds</h2>
+                <div class="card">
+                    <div class="card-divider">
+                        <h1>Time Remaining</h1>
+                    </div>
+                    <div class="card-section">
+                        <h2><span>00</span>hr <span>00</span>min <span>00</span>seconds</h2>
+                    </div>
                 </div>
             </section>
-
             <!-- On payment success of parking spot ends, timer section showing remaining time for parking section, ends -->
 
             <!-- Map section with parking spot marked -->
             <section class="cell large-6">
                 <!-- map integration here -->
-                <div id="map">
-                    <!-- <img src="../assets/map.png" alt="map image"> -->
-                </div>
+                <div id="map"></div>
             </section>
         </div>
     </main>

@@ -134,3 +134,10 @@ a {
 .center-box-align-logo {
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) { 
+  .app-link {
+    top: 20%;
+    left: 30%;
+  }
+}
